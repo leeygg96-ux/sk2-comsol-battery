@@ -1,0 +1,38 @@
+# COMSOL generated and binary artifacts
+*.mph
+*.mphbin
+*.mph.lock
+*.mph.autosave
+*.class
+*.jar
+*.status
+*.recovery
+recovery/
+
+# Logs and generated outputs
+*.log
+thermal-abuse/outputs/models/*
+!thermal-abuse/outputs/models/.gitkeep
+thermal-abuse/outputs/logs/*
+!thermal-abuse/outputs/logs/.gitkeep
+thermal-abuse/outputs/exports/*
+!thermal-abuse/outputs/exports/.gitkeep
+charge-discharge/outputs/
+
+# Build folders
+build/
+out/
+target/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
