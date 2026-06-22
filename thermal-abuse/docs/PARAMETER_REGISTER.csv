@@ -1,0 +1,72 @@
+name,expression,description,review_status,source_line
+scale,1/3,Geometric scale retained from the original model,baseline,92
+cell_L,354[mm]*scale,,baseline,93
+cell_W,101[mm]*scale,,baseline,94
+cell_T,9.5[mm]*scale,,baseline,95
+active_L,350[mm]*scale,,baseline,96
+active_W,98[mm]*scale,,baseline,97
+active_T,7.5[mm]*scale,,baseline,98
+tab_L,28[mm]*scale,,baseline,99
+tab_W,50[mm]*scale,,baseline,100
+tab_T,2[mm]*scale,,baseline,101
+gap_full,0.6[mm],Placeholder full-scale face-to-face interface thickness,measure,104
+gap_t,gap_full*scale,Scaled effective interface thickness,baseline,105
+cell_pitch,cell_T+gap_t,,baseline,106
+z1,0,,baseline,107
+z2,cell_pitch,,baseline,108
+z3,2*cell_pitch,,baseline,109
+stack_H,3*cell_T+2*gap_t,,baseline,110
+Rth_int,1e-3[m^2*K/W],Placeholder areal cell-to-cell thermal resistance,calibrate,113
+k_int,gap_t/Rth_int,Equivalent interface thermal conductivity,baseline,114
+rho_int,1000[kg/m^3],Placeholder interface density,placeholder,115
+Cp_int,1000[J/(kg*K)],Placeholder interface heat capacity,placeholder,116
+busbar_margin,1[mm]*scale,,baseline,119
+busbar_z0,(cell_T-tab_T)/2,,baseline,120
+busbar_H,z3+(cell_T+tab_T)/2-busbar_z0,,baseline,121
+Ae,3e15[1/s],Electrolyte decomposition frequency factor,baseline,126
+Apos1,1.75e9[1/s],Positive-solvent frequency factor 1,baseline,127
+Apos2,1.077e12[1/s],Positive-solvent frequency factor 2,baseline,128
+Asei,1.667e15[1/s],SEI decomposition frequency factor,baseline,129
+Ea_e,1.7e5[J/mol],,baseline,130
+Ea_neg,3.3e4[J/mol],,baseline,131
+Ea_pos1,1.1495e5[J/mol],,baseline,132
+Ea_pos2,1.5888e5[J/mol],,baseline,133
+Ea_sei,1.3508e5[J/mol],,baseline,134
+Hele,800[J/g],,baseline,135
+Hneg,1714[J/g],,baseline,136
+Hpos1,77[J/g],,baseline,137
+Hpos2,84[J/g],,baseline,138
+Hsei,257[J/g],,baseline,139
+c_sei_ref,1,,baseline,140
+Hsep,-233.2[J/g],,baseline,142
+Asep,1.5e50[1/s],,baseline,143
+Ea_sep,4.2e5[J/mol],,baseline,144
+ce0,1,,baseline,146
+cneg0,1,,baseline,147
+csei0,0.15,,baseline,148
+cpos10,0.999,,baseline,149
+cpos20,0.999,,baseline,150
+csep0,1,,baseline,151
+alpha,0.7,,baseline,152
+m_soh1,1,Cell 1 effective reacting-mass factor,future-handle,155
+m_soh2,1,Cell 2 effective reacting-mass factor,future-handle,156
+m_soh3,1,Cell 3 effective reacting-mass factor,future-handle,157
+h_soh1,1,Cell 1 additional-heat factor,future-handle,158
+h_soh2,1,Cell 2 additional-heat factor,future-handle,159
+h_soh3,1,Cell 3 additional-heat factor,future-handle,160
+Hchem_base,12000[J],Corrected total additional energy per scaled cell,owner-defined,163
+V_act_cell,350[mm]*98[mm]*7.5[mm]*scale^3,Active volume of one scaled cell,baseline,164
+dt_chem,5[s],,baseline,165
+T_init,35[degC],,baseline,170
+T_amb,35[degC],,baseline,171
+h_conv,7.17[W/(m^2*K)],,baseline,172
+q_heater,15000[W/m^2],,baseline,173
+T_heater_off,500[K],,baseline,174
+heater_L,cell_L/2,,baseline,175
+heater_W,cell_W/2,,baseline,176
+heater_t,0.05[mm],Numerically thin heater-solid thickness,baseline,177
+k_active_x,98[W/(m*K)],,baseline,180
+k_active_y,98[W/(m*K)],,baseline,181
+k_active_z,98[W/(m*K)],,baseline,182
+rho_active,1800[kg/m^3],,baseline,183
+Cp_active,1200[J/(kg*K)],,baseline,184
