@@ -25,6 +25,21 @@ sk2-comsol-battery/
 5. Java가 모델 정의의 원본이다. 생성된 MPH와 대용량 결과는 기본적으로 Git에 커밋하지 않는다.
 6. 물리식·경계조건·물성치를 바꾼 커밋은 근거와 검증 결과를 함께 기록한다.
 
+## 제공된 Git bundle로 시작
+
+Git 이력과 태그까지 포함된 bundle을 받은 경우:
+
+```bash
+git clone -b main sk2-comsol-battery-initial.bundle sk2-comsol-battery
+cd sk2-comsol-battery
+git remote remove origin
+git remote add origin <private-github-repository-url>
+git push -u origin main --tags
+git push -u origin ta/baseline-verification
+```
+
+첫 열적 남용 검증 브랜치는 `ta/baseline-verification`로 준비한다. 실제 작업은 해당 브랜치의 별도 worktree에서 수행하는 것을 권장한다.
+
 ## 첫 확인
 
 ```bash
