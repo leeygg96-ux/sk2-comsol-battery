@@ -1,10 +1,10 @@
 /*
- * SOC100_3cell_offset_v01.java
+ * SOC100_3cell_offset_v02.java
  *
  * Three-cell thermal-abuse / propagation baseline derived from
  * SOC100_paper_revise_2.
  *
- * Main assumptions in v0.1
+ * Main assumptions in v0.2
  *  - Three geometrically identical pouch cells are stacked in the z direction.
  *  - The original lumped Arrhenius thermal-runaway reaction model is solved
  *    independently in each active domain.
