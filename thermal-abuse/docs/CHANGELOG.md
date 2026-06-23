@@ -1,5 +1,9 @@
 # Thermal-abuse documentation changelog
 
+## v0.3.2 - COMSOL batch null args save fix
+
+- Made `SOC100_3cell_offset_v03.java` tolerate COMSOL Batch invoking `main` with `args == null`, so the default output remains `SOC100_3cell_offset_v03.mph` instead of throwing before `model.save(...)`.
+
 ## v0.3.1 - COMSOL material tensor API fix
 
 - Fixed COMSOL Java API material thermal-conductivity tensor format from nested String[][] to flat String[] to resolve nonscalar matrix item error.
