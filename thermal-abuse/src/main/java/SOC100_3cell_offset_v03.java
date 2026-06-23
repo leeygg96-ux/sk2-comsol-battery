@@ -45,8 +45,8 @@ public class SOC100_3cell_offset_v03 {
     return out;
   }
 
-  private static String[][] diagonalTensor(String kx, String ky, String kz) {
-    return new String[][]{{kx, "0", "0"}, {"0", ky, "0"}, {"0", "0", kz}};
+  private static String[] diagonalTensor(String kx, String ky, String kz) {
+    return new String[]{kx, "0", "0", "0", ky, "0", "0", "0", kz};
   }
 
   private static void addBlock(
