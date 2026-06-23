@@ -571,7 +571,10 @@ public class SOC100_3cell_offset_v03 {
         model.study("std1").run();
       }
 
-      String output = (args.length > 0) ? args[0] : "SOC100_3cell_offset_v03.mph";
+      String output = ((args != null) && (args.length > 0)
+          && (args[0] != null) && !args[0].trim().isEmpty())
+          ? args[0]
+          : "SOC100_3cell_offset_v03.mph";
       model.save(output);
       System.out.println("Saved COMSOL model to: " + output);
     } catch (java.io.IOException e) {
