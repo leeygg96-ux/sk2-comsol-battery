@@ -1,5 +1,9 @@
 # Thermal-abuse documentation changelog
 
+## v0.3.1 - COMSOL material tensor API fix
+
+- Fixed COMSOL Java API material thermal-conductivity tensor format from nested String[][] to flat String[] to resolve nonscalar matrix item error.
+
 ## v0.3.0 - material nodes and explicit solver sequence
 
 - Added `SOC100_3cell_offset_v03.java` from `SOC100_3cell_offset_v02.java`.
